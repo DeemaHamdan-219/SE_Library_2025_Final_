@@ -2,6 +2,8 @@ package org.example.library.services;
 
 import org.example.library.models.CD;
 import org.example.library.storage.FileDatabase;
+import org.example.library.strategies.FineStrategy;
+import org.example.library.strategies.CDFineStrategy;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -113,10 +115,14 @@ public class CDService {
 
     // ⭐ Overdue detection for CDs
     public void checkOverdueCDs() {
+
         JSONObject db = FileDatabase.load();
         JSONArray cds = db.getJSONArray("cds");
 
         LocalDate today = LocalDate.now();
+
+        // ⭐ Use CD Fine Strategy
+        FineStrategy strategy = new CDFineStrategy();
 
         for (int i = 0; i < cds.length(); i++) {
             JSONObject c = cds.getJSONObject(i);
@@ -130,7 +136,9 @@ public class CDService {
                     long daysLate = ChronoUnit.DAYS.between(dueDate, today);
 
                     if (daysLate > 0) {
-                        double fine = daysLate * 20;  // ⭐ CD fine rule = 20 NIS per day
+
+                        // ⭐ Calculate fine using STRATEGY
+                        double fine = strategy.calculateFine((int) daysLate);
                         c.put("fine", fine);
                     }
                 }
@@ -138,8 +146,9 @@ public class CDService {
         }
 
         FileDatabase.save(db);
-        System.out.println("✔ CD overdue detection complete.");
+        System.out.println("✔ CD overdue detection complete (Strategy Pattern applied).");
     }
+
 
     // ⭐ Total fine for THIS user’s CDs
     public double getTotalCdFineForUser(int userId) {

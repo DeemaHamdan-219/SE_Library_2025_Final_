@@ -1,22 +1,22 @@
 {
     "books": [
         {
-            "quantity": 9,
+            "quantity": 8,
             "fine": 0,
             "author": "david",
             "isbn": "120",
-            "borrowedBy": null,
-            "dueDate": null,
+            "borrowedBy": 3,
+            "dueDate": "2025-1-24",
             "available": true,
             "title": "dima101",
-            "borrowed": false
+            "borrowed": true
         },
         {
             "quantity": 11,
             "fine": 0,
             "author": "soso",
             "isbn": "22",
-            "borrowedBy": 3,
+            "borrowedBy": null,
             "dueDate": null,
             "available": true,
             "title": "sami",
@@ -27,11 +27,11 @@
             "fine": 0,
             "author": "roro",
             "isbn": "44",
-            "borrowedBy": null,
-            "dueDate": null,
+            "borrowedBy": 4,
+            "dueDate": "2025-1-24",
             "available": true,
             "title": "rula",
-            "borrowed": false
+            "borrowed": true
         },
         {
             "quantity": 9,
@@ -126,21 +126,33 @@
     ],
     "loans": [],
     "users": [
-        {
-            "password": "1234",
-            "role": "admin",
-            "username": "admin"
-        },
-        {
-            "password": "1234",
-            "role": "librarian",
-            "username": "sama"
-        },
-        {
-            "password": "1234",
-            "role": "client",
-            "id": 3,
-            "username": "david"
-        }
+      {
+        "id": 1,
+        "username": "admin",
+        "password": "1234",
+        "role": "admin",
+        "email": "admin@gmail.com"
+      },
+      {
+        "id": 2,
+        "username": "ahmad",
+        "password": "1234",
+        "role": "librarian",
+        "email": "ahmad@gmail.com"
+      },
+      {
+        "id": 4,
+        "username": "asmma",
+        "password": "1234",
+        "role": "user",
+        "email": "s12113970@stu.najah.edu"
+      },
+      {
+        "id": 3,
+        "username": "sara",
+        "password": "1234",
+        "role": "user",
+        "email": "deemahamdan2004@gmail.com"
+      }
     ]
 }

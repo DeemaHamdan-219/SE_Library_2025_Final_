@@ -4,19 +4,24 @@ import org.example.library.models.User;
 import org.example.library.menus.AdminMenu;
 import org.example.library.menus.ClientMenu;
 import org.example.library.menus.LibrarianMenu;
+import org.example.library.observers.EmailNotifier;
 import org.example.library.services.AdminService;
+import org.example.library.services.BookService;
 import org.example.library.storage.FileDatabase;
 import org.example.library.utils.Input;
 
 public class Main {
 
     private static AdminService adminService = new AdminService();
+    private static BookService bookService = new BookService();   // ⭐ أضفناه
     private static User currentUser = null;
+
 
     public static void main(String[] args) {
 
         // Use main database
         FileDatabase.useMainDatabase();
+        bookService.addObserver(new EmailNotifier());
 
         while (true) {
             System.out.println("\n===== Library System =====");

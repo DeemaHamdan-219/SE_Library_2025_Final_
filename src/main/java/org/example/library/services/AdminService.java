@@ -21,18 +21,22 @@ public class AdminService {
             if (u.getString("username").equals(username) &&
                     u.getString("password").equals(password)) {
 
-                int id = u.has("id") ? u.getInt("id") : -1; // ⭐ ID only for clients
+                int id = u.has("id") ? u.getInt("id") : -1;
+
+                String email = u.has("email") ? u.getString("email") : "unknown@mail.com";
 
                 return new User(
                         id,
                         u.getString("username"),
                         u.getString("password"),
-                        u.getString("role")
+                        u.getString("role"),
+                        email   // ⭐ NEW
                 );
             }
         }
         return null;
     }
+
 
     // ===========================================
     //           UNREGISTER USER  (Sprint 4)
