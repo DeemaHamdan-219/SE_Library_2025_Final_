@@ -10,7 +10,7 @@ import org.example.library.models.User;
  * When the system detects an event (e.g., overdue book),
  * it calls {@code notify()} to deliver the message to the observer.
  *
- * @author Dima & Asmaa
+ * @author Dima and Asmaa
  * @version 1.0
  */
 

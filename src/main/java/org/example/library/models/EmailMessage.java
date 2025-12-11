@@ -5,7 +5,7 @@ package org.example.library.models;
  * This class is used together with the Observer Pattern to send
  * overdue reminders or other system notifications.
  *
- * @author Dima
+ * @author Dima and Asmaa
  * @version 1.0
  */
 public class EmailMessage {

@@ -1,0 +1,8 @@
+org.example.library
+org.example.library.menus
+org.example.library.models
+org.example.library.observers
+org.example.library.services
+org.example.library.storage
+org.example.library.strategies
+org.example.library.utils

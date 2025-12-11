@@ -7,7 +7,7 @@ import java.time.LocalDate;
  * Stores metadata such as title, author, ISBN, availability,
  * borrowing status, due dates, and fines.
  *
- * @author Dima & Asma'a
+ * @author Dima and Asmaa
  * @version 1.0
  */
 
@@ -137,7 +137,7 @@ public class Book {
      * Decreases the book quantity safely.
      * If quantity reaches zero, book becomes unavailable.
      *
-     * @param amount number of copies to remove (must be <= quantity)
+     * @param amount number of copies to remove (must be &lt;= quantity)
      */
     public void decreaseQuantity(int amount) {
         if (amount <= quantity) this.quantity -= amount;

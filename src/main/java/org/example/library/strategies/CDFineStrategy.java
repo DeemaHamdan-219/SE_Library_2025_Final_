@@ -19,7 +19,7 @@ package org.example.library.strategies;
  *     double fine = strategy.calculateFine(3); // → 60.0
  * </pre>
  *
- * @author Dima & Asmaa
+ * @author Dima and Asmaa
  * @version 1.0
  */
 public class CDFineStrategy implements FineStrategy {

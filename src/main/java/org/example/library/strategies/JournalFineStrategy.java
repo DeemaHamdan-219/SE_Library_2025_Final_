@@ -26,7 +26,7 @@ package org.example.library.strategies;
  * <p>This class contains no internal state and is fully stateless,
  * meaning one instance can be reused safely across the system.</p>
  *
- * @author Dima & Asmaa
+ * @author Dima and Asmaa
  * @version 1.0
  */
 public class JournalFineStrategy implements FineStrategy {

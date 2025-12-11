@@ -12,7 +12,7 @@ import java.util.List;
  * This model is used in reporting features (Sprint 5) to display
  * a combined summary of all overdue books and CDs.
  *
- * @author Dima
+ * @author Dima and Asmaa
  * @version 1.0
  */
 public class OverdueReport {
