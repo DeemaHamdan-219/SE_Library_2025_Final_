@@ -19,6 +19,7 @@ public class BookTest {
         assertNull(b.getDueDate());
         assertEquals(0.0, b.getFine());
     }
+    ///   ////////
 
     @Test
     void testFullConstructor() {
