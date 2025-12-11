@@ -12,7 +12,7 @@ package org.example.library.strategies;
  *
  * <p>Each overdue day costs 10 NIS.</p>
  *
- * @author Dima & Asma'a
+ * @author Dima and Asmaa
  * @version 1.0
  */
 public class BookFineStrategy implements FineStrategy {

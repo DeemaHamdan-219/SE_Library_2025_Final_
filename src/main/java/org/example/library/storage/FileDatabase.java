@@ -13,7 +13,7 @@ import java.nio.file.Paths;
  * Methods in this class allow switching between a main database and
  * a test database, ensuring safe testing without corrupting real data.</p>
  *
- * @author Dima & Asmaa
+ * @author Dima and Asmaa
  * @version 1.0
  */
 public class FileDatabase {

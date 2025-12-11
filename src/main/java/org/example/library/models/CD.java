@@ -7,7 +7,7 @@ import java.time.LocalDate;
  * This model is used in Sprint 5 to support borrowing,
  * overdue detection, and fine calculation for multimedia items.
  *
- * @author Dima & Asma'a
+ * @author Dima and Asmaa
  * @version 1.0
  */
 
