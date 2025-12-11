@@ -12,7 +12,13 @@
         <maven.compiler.source>24</maven.compiler.source>
         <maven.compiler.target>24</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- SonarCloud configuration -->
+        <sonar.organization>s12113970-cloud</sonar.organization>
+        <sonar.projectKey>SE_Library_2025_Final</sonar.projectKey>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
+
 
     <dependencies>
 
